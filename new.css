@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: azure;
+    width: 98%;
+    height: 100px;
+    position: fixed;
+}
+
+.logo {
+    color: aqua;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-left: 2cm;
+}
+
+.navs {
+    display: flex;  /* Make nav items horizontal */
+    gap: 20px;      /* Add spacing between items */
+    list-style-type: none;
+}
+
+.navs li {
+    font-family: sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navs li a {
+    color: blue;
+    text-decoration: none;
+    
+}
+.container h1{
+    color: rgb(64, 3, 67);
+    font-size: 48px;
+    padding-left: 2cm;
+    padding-top: 5cm;
+}.para{
+    font-size: 22px;
+    padding-left: 2cm;
+    padding-top: 0.9cm;
+}.svg1{
+    padding-left: 2cm;
+    padding-top: 1.5cm;
+}.parts{
+    display: flex;
+    justify-content: space-between;
+} .moc{
+    padding-top: 0;
+    display: flex;
+    
+}.one{
+    font-size: 33px;
+    padding-left: 2cm;
+    color: rgb(39, 6, 55);
+}.next{
+    padding-left: 2cm;
+    padding-top: 2.8cm;
+}.next h3{
+    font-size: 23px;
+    padding-top: 1cm;
+}.next p{
+    color: rgb(66, 52, 34);
+    font-size: 17px;
+    padding-top: 1cm;
+}
+.lean a{
+color: rgb(5, 155, 230);
+padding-top: 2cm;
+font-size: 20px;
+text-decoration: none;
+}.l1{
+    padding-left: 2cm;
+}.l2{
+    padding-left: 2cm;
+}.all1{
+  
+    
+}.all2{
+    background-color: rgba(255, 255, 255, 0.872);
+    display: flex;
+}.send{
+    color: rgb(19, 132, 237);
+    font-size: 24px;
+    padding-top: 2cm;
+}.para3{
+    padding-top: 1cm;
+}.leanm{
+    padding-top: 1cm;
+    color: rgb(22, 92, 222);
+    font-size: 20px;
+}.leanm a{
+    color: rgb(9, 124, 206);
+    text-decoration: none;
+}
+.l2{
+    padding-top: 2cm;
+}.buy{
+    font-size: 20px;
+    color: rgb(12, 87, 200);
+    padding-top: 1cm;
+} .para4{
+    padding-top: 1cm;
+    font-size: 18px;
+}.leanm1{
+    font-size: 20px;
+    color: rgb(40, 43, 233);
+    padding-top: 1cm;
+}.leanm1 a{
+    color: rgb(19, 119, 234);
+    text-decoration: none;
+}
+
+

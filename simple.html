@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple</title>
+
+    <style>
+        #box{
+            background-color: blue;
+            width: 90px;
+            height: 70px;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button type="button" onclick="startAnimation()">start</button>
+
+    <script>
+
+
+
+let box=document.getElementById("box");
+let positionX=0;
+let positionY=0;
+ 
+let direction="right";
+function startAnimation(){
+
+if(direction=== "right"){
+    positionX +=5;
+    if(positionX >=300){direction="doun";}
+
+}
+else if(direction=== "doun"){
+    positionY +=5;
+    if(positionY >=300){direction="left";}
+
+}
+else if(direction=== "left"){
+    positionX -=5;
+    if(positionX <=50){direction="up";}
+
+}
+else if(direction==="up"){
+    positionY -=5;
+    if(positionY <=50){direction="right";}
+    
+
+} box.style.left= positionX + "px";
+box.style.top= positionY + "px";
+requestAnimationFrame(startAnimation);
+}
+startAnimation();
+
+    </script>
+
+</body>
+</html>

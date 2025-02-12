@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>my animation</title>
+    <style>
+        #image{
+        
+            position: absolute;
+            top: 0;
+            left: 50;
+            background-color: aqua;
+
+
+        } #ima{
+            position: absolute;
+            top: 0;
+            left: 50;  
+        }
+        body{
+         color: burlywood;
+        }
+    </style>
+</head>
+<body>
+<P> HELLO WORLD</P>
+
+<img src="ss.jpg" alt="ima" id="image">
+
+
+<button type="button" onclick="startAnimation()">start</button>
+
+<script>
+    let box=document.getElementById("image");
+    
+    // getting an element by its id
+    let positionX=0;
+    let positionY=0;
+    let direction="right";
+
+    function startAnimation(){
+        if(direction==="right"){
+            positionX +=5;
+            if(positionX >=500){direction ="doun";}
+
+        } else if(direction==="doun"){
+            positionY +=5;
+            if(positionY >=400){direction="left";}
+
+        }else if(direction==="left"){
+            positionX -=5;
+            if(positionX <=1000){direction="up";}
+
+        } else if(direction==="up"){
+            positionY -=5;
+            if(positionY <=50){direction="right";}
+        } box.style.left= positionX + "px";
+        box.style.top= positionY + "px";
+         
+        requestAnimationFrame(startAnimation);
+    } 
+    startAnimation();
+
+    
+</script>
+</body>
+</html>
